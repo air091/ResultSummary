@@ -178,15 +178,18 @@ button {
   color: var(--neutral-white);
   cursor: pointer;
 }
-button:hover {
-  background: linear-gradient(to bottom, var(--gradient-violet-blue), var(--gradient-royal-blue));
-}
+
 .active {
   background: linear-gradient(to bottom, var(--gradient-violet-blue), var(--gradient-royal-blue));
 }
 
-
 /* RESPONSIVENESS */
+@media screen and (min-width:613px) {
+    button:hover {
+    background: linear-gradient(to bottom, var(--gradient-violet-blue), var(--gradient-royal-blue));
+  }
+}
+
 @media screen and (max-width:612px) {
   body {
     display: block;
