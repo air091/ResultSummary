@@ -181,6 +181,9 @@ button {
 button:hover {
   background: linear-gradient(to bottom, var(--gradient-violet-blue), var(--gradient-royal-blue));
 }
+.active {
+  background: linear-gradient(to bottom, var(--gradient-violet-blue), var(--gradient-royal-blue));
+}
 
 
 /* RESPONSIVENESS */
