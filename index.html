@@ -58,11 +58,11 @@
   <script>
     const continueButton = document.getElementbyId('continueButton');
     
-    continueButton.addEventListener('click', function() {
-      continueButton.classList.toggle('active');
+    continueButton.addEventListener('touchstart', function() {
+      continueButton.classList.add('active');
     });
-    continueButton.addEventListener('touched', function() {
-      continueButton.classList.toggle('active');
+    continueButton.addEventListener('touchend', function() {
+      continueButton.classList.remove('active');
       continueButton.blur();
     });
   </script>
