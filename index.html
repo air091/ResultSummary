@@ -56,14 +56,17 @@
   </main>
 
   <script>
-    const continueButton = document.getElementbyId('continueButton');
+    document.addEventListener('DOMContentLoaded', () => {
+    const button = document.getElementById('btn');
     
-    continueButton.addEventListener('touchstart', function() {
-      continueButton.classList.add('active');
-    });
-    continueButton.addEventListener('touchend', function() {
-      continueButton.classList.remove('active');
-      continueButton.blur();
+      button.addEventListener('touchstart', () => {
+        button.classList.toggle('active');
+      });
+
+      button.addEventListener('touchend', () => {
+        button.classList.toggle('active');
+      });
+
     });
   </script>
 </body>
