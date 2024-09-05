@@ -51,8 +51,19 @@
           </div>
           <p class="score"><span>72</span> / 100</p></li>
       </ul>
-      <button>Continue</button>
+      <button id="continueButton">Continue</button>
     </section>
   </main>
+
+  <script>
+    const continueButton = document.getElementbyId('continueButton');
+    
+    continueButton.addEventListener('click', function() {
+      continueButton.classList.toggle('active');
+    });
+    continueButton.addEventListener('touched', function() {
+      continueButton.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
